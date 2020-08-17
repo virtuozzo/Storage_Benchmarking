@@ -1,0 +1,27 @@
+curl -i -X POST -H 'Accept: application/json' -H 'Content-type: application/json' -u user:password -d '
+{
+  "virtual_machine": {
+    "acceleration_allowed": "true",
+    "cpu_shares": "100",
+    "cpus": "2",
+    "data_store_group_primary_id": "2",
+    "domain": "localdomain",
+    "enable_autoscale": "0",
+    "hostname": "bench",
+    "hypervisor_group_id": "4",
+    "hypervisor_id": "9",
+    "label": "bench",
+    "memory": "4096",
+    "primary_disk_size": "40",
+    "primary_network_group_id": "3",
+    "network_id": "3",
+    "rate_limit": "0",
+    "allowed_swap": "false",
+    "swap_disk_size": "0",
+    "required_automatic_backup": "0",
+    "required_ip_address_assignment": "1",
+    "required_virtual_machine_build": "1",
+    "required_virtual_machine_startup": "1",
+    "template_id": "4"
+  }
+}' --url http://cloud.example.com/virtual_machines.json
